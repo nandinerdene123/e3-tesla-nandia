@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesla — Model 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#" aria-label="Tesla home">T</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#vehicles">Vehicles</a><a href="#energy">Energy</a><a href="#charging">Charging</a>
+      <a href="#discover">Discover <span>⌄</span></a><a href="#shop">Shop</a>
+    </nav>
+    <a class="button button-dark nav-shop" href="#shop">Shop</a>
+  </header>
+
+  <main>
+    <section class="hero" id="vehicles">
+      <div class="hero-content"><span>Electric</span><h1>Model 3</h1><p>1.99% APR Available</p>
+        <div class="actions"><a class="button button-light" href="#">Order</a><a class="button button-glass" href="#performance">Learn more</a></div>
+      </div>
+    </section>
+
+    <section class="section performance" id="performance">
+      <div class="container split">
+        <div><p class="eyebrow">Performance</p><h2>Full Self-Driving<br>(Supervised)</h2><p class="lead">Makes every drive easier. Subscribe for $99/mo.<sup>1</sup></p>
+          <div class="stats"><div><strong>7x</strong><span>Fewer Collisions</span></div><div><strong>1,345,677,<br>890</strong><span>Miles Driven</span></div></div>
+          <div class="actions left"><a class="button button-outline" href="#">Schedule</a><a class="text-link" href="#">Learn more →</a></div>
+        </div>
+        <img class="rounded media media-fsd" src="assets/product-2.jpeg" alt="Tesla Full Self-Driving at night">
+      </div>
+    </section>
+
+    <section class="section models">
+      <div class="container"><div class="section-title"><h2>Tesla Models</h2><p>Drive</p></div>
+        <div class="model-stage"><img src="assets/fsd.jpeg" alt="Red Tesla sports car driving"><button class="arrow prev" aria-label="Previous">‹</button><button class="arrow next" aria-label="Next">›</button></div>
+        <div class="dots"><b></b><i></i><i></i></div>
+      </div>
+    </section>
+
+    <section class="section features" id="energy">
+      <div class="container"><div class="feature-intro"><p class="eyebrow">Technology</p><h2>Medium Length Section<br>Heading Goes Here</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus.</p></div>
+        <div class="feature-grid">
+          <article><div class="placeholder">▧</div><h3>Medium Length<br>Section Heading<br>Goes Here</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p><a href="#">Button　→</a></article>
+          <article><div class="placeholder">▧</div><h3>Medium Length<br>Section Heading<br>Goes Here</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p><a href="#">Button　→</a></article>
+          <article><div class="placeholder">▧</div><h3>Medium Length<br>Section Heading<br>Goes Here</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p><a href="#">Button　→</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="charging" id="charging">
+      <div class="container"><div class="section-title"><h2>Tesla Superchargers in<br>United State</h2><p>Located on major routes near convenient amenities.</p></div>
+        <img class="map" src="assets/product-3.jpeg" alt="Map of Tesla Superchargers in the United States">
+      </div>
+    </section>
+
+    <section class="charge-stats"><div class="container charge-row"><div><p class="eyebrow">Explore</p><h2>Find Your Charge</h2></div><div><p>View thousands of fast Superchargers and Destination Chargers.</p><div class="numbers"><strong>37,613 <small>Superchargers</small></strong><strong>5,661 <small>Destination Chargers</small></strong></div></div></div></section>
+
+    <section class="section products" id="shop"><div class="container"><p class="eyebrow">Tesla Shop</p><h2>Products</h2><div class="product-track">
+      <article><img src="assets/product-1.jpeg" alt="Tesla solar roof"><p>Turn sunlight into clean, renewable energy to power your home.</p><small>Solar Roof</small><div>★★★★★</div></article>
+      <article><img class="contain" src="assets/product-4.jpeg" alt="Tesla home appliance"><p>Efficient technology designed to complement the modern home.</p><small>Home Energy</small><div>★★★★★</div></article>
+      <article><img src="assets/model-red.jpeg" alt="Tesla Cybertruck"><p>Experience Tesla technology, utility, performance and safety.</p><small>Cybertruck</small><div>★★★★★</div></article>
+      <article><img src="assets/hero.jpeg" alt="Tesla Model 3"><p>Charge at home and stay powered wherever your journey takes you.</p><small>Vehicles</small><div>★★★★★</div></article>
+    </div><div class="product-controls"><span>•••••</span><div><button>←</button><button>→</button></div></div></div></section>
+  </main>
+
+  <footer><div class="container footer-main"><a class="logo" href="#">T</a><nav><a href="#">Model S</a><a href="#">Model 3</a><a href="#">Model X</a><a href="#">Model Y</a><a href="#">Shop</a></nav><div class="social">●　◎　𝕏　in　▶</div></div><div class="container legal"><span>© 2024 Tesla. All rights reserved.</span><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookies Settings</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
