@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-raleway);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: white;
+    color: #080808;
+    font-family: var(--font-inter), Arial, sans-serif;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.container-shell {
+  width: min(1280px, calc(100% - 128px));
+  margin-inline: auto;
+}
+
+@media (max-width: 850px) {
+  .container-shell {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 520px) {
+  .container-shell {
+    width: calc(100% - 36px);
+  }
+}
+
+.heading-display {
+  font-family: var(--font-raleway), Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 3px rgb(255 255 255), 0 0 0 5px rgb(0 0 0);
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
